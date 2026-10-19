@@ -1,5 +1,7 @@
 # Slot-adjacent drive failures: code, derived data and results
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23478229.svg)](https://doi.org/10.5281/zenodo.23478229)
+
 Code, derived per-drive tables and result files for the manuscript "Slot-adjacent drive failures cluster within servers, with heterogeneous effects across a public storage fleet".
 
 The analysis uses the public [Backblaze Drive Stats](https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data) daily files from 2023-07-01 to 2026-06-30. It asks whether, after a drive fails, other drives in the same server fail more often than shared model, age and vault would predict, and whether the excess depends on slot-number distance.
@@ -62,4 +64,4 @@ The shared-link test is part of `dd_audit.py`, which `run_corrected.sh` runs.
 
 ## Citation
 
-See `CITATION.cff`. The archived release has a Zenodo DOI ⟦to be added after the first release⟧.
+See `CITATION.cff`. Release v1.0.0 is archived at Zenodo: [https://doi.org/10.5281/zenodo.23478229](https://doi.org/10.5281/zenodo.23478229).
