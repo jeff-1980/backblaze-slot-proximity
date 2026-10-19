@@ -1,0 +1,1802 @@
+{
+ "config": {
+  "GAPI": 14,
+  "GAPE": 0,
+  "REPL": 1,
+  "ANCHOR": "fdate",
+  "B": 200,
+  "SEED": 20261019
+ },
+ "meta": [
+  {
+   "n_index": 1646,
+   "index_by_type": {
+    "obs": 1646,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "n_fail_complete": 1723,
+   "pend": 183,
+   "lag_last_located_to_failure": {
+    "count": 1968.0,
+    "mean": 0.1,
+    "std": 0.94,
+    "min": 0.0,
+    "25%": 0.0,
+    "50%": 0.0,
+    "75%": 0.0,
+    "max": 26.0
+   },
+   "runs": "results/v6runs/runs_k2023h2.parquet",
+   "k": "data/k2023h2c.parquet"
+  },
+  {
+   "n_index": 4009,
+   "index_by_type": {
+    "obs": 4009,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "n_fail_complete": 4198,
+   "pend": 365,
+   "lag_last_located_to_failure": {
+    "count": 4528.0,
+    "mean": 0.1,
+    "std": 0.99,
+    "min": 0.0,
+    "25%": 0.0,
+    "50%": 0.0,
+    "75%": 0.0,
+    "max": 50.0
+   },
+   "runs": "results/v6runs/runs_k2024.parquet",
+   "k": "data/k2024.parquet"
+  },
+  {
+   "n_index": 838,
+   "index_by_type": {
+    "obs": 838,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "n_fail_complete": 4140,
+   "pend": 364,
+   "lag_last_located_to_failure": {
+    "count": 4284.0,
+    "mean": 2.5,
+    "std": 6.19,
+    "min": 0.0,
+    "25%": 1.0,
+    "50%": 1.0,
+    "75%": 2.0,
+    "max": 151.0
+   },
+   "runs": "results/v6runs/runs_k2025.parquet",
+   "k": "data/k2025.parquet"
+  },
+  {
+   "n_index": 684,
+   "index_by_type": {
+    "obs": 684,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "n_fail_complete": 2145,
+   "pend": 180,
+   "lag_last_located_to_failure": {
+    "count": 2483.0,
+    "mean": 3.5,
+    "std": 9.45,
+    "min": 0.0,
+    "25%": 0.0,
+    "50%": 1.0,
+    "75%": 1.0,
+    "max": 121.0
+   },
+   "runs": "results/v6runs/runs_k2026.parquet",
+   "k": "data/k2026c.parquet"
+  }
+ ],
+ "groups": {
+  "explore": {
+   "sets": {
+    "POD": {
+     "exposures": 366460,
+     "events": 1029,
+     "censored": 1489,
+     "censored_share": 0.004063199257763467,
+     "naive_per_10k": 28.079462970037657,
+     "km_per_10k": 28.12918913735696,
+     "expected_per_10k": 26.191184216557556,
+     "model30_per_10k": 26.29429450344296,
+     "O_E": 1.072095967019558,
+     "exposures_by_type": {
+      "obs": 365825,
+      "interp": 635,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 1029,
+      "interp": 0,
+      "ext": 0
+     },
+     "km_ci": [
+      24.209578844584136,
+      32.92830206295669
+     ],
+     "O_E_ci": [
+      0.9812558188314423,
+      1.1632434707747303
+     ]
+    },
+    "d0": {
+     "exposures": 7,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 7,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 25231,
+     "events": 131,
+     "censored": 125,
+     "censored_share": 0.004954222979667869,
+     "naive_per_10k": 51.920256826919264,
+     "km_per_10k": 52.031872962157166,
+     "expected_per_10k": 26.563397347128014,
+     "model30_per_10k": 26.818927200613956,
+     "O_E": 1.9545789323718712,
+     "exposures_by_type": {
+      "obs": 25195,
+      "interp": 36,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 131,
+      "interp": 0,
+      "ext": 0
+     },
+     "km_ci": [
+      39.167551549072755,
+      64.92809383984044
+     ],
+     "O_E_ci": [
+      1.5338746950421824,
+      2.3326444726650153
+     ]
+    },
+    "d2": {
+     "exposures": 36113,
+     "events": 121,
+     "censored": 155,
+     "censored_share": 0.004292083183341179,
+     "naive_per_10k": 33.50593968930856,
+     "km_per_10k": 33.56890243830346,
+     "expected_per_10k": 26.557508338479966,
+     "model30_per_10k": 26.638614068901784,
+     "O_E": 1.2616371710127943,
+     "exposures_by_type": {
+      "obs": 36061,
+      "interp": 52,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 121,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 104880,
+     "events": 290,
+     "censored": 438,
+     "censored_share": 0.004176201372997712,
+     "naive_per_10k": 27.650648360030512,
+     "km_per_10k": 27.699892834700535,
+     "expected_per_10k": 26.162132617621165,
+     "model30_per_10k": 26.292265549301444,
+     "O_E": 1.056895810604017,
+     "exposures_by_type": {
+      "obs": 104724,
+      "interp": 156,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 290,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 200229,
+     "events": 487,
+     "censored": 771,
+     "censored_share": 0.0038505910732211618,
+     "naive_per_10k": 24.322151136948193,
+     "km_per_10k": 24.363970461089846,
+     "expected_per_10k": 26.094344585303084,
+     "model30_per_10k": 26.168066218440014,
+     "O_E": 0.932085151916288,
+     "exposures_by_type": {
+      "obs": 199838,
+      "interp": 391,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 487,
+      "interp": 0,
+      "ext": 0
+     },
+     "km_ci": [
+      20.273391202831032,
+      29.247605099453676
+     ],
+     "O_E_ci": [
+      0.807566309578392,
+      1.0565780497044133
+     ]
+    },
+    "REST": {
+     "exposures": 7091627,
+     "events": 17141,
+     "censored": 25503,
+     "censored_share": 0.0035962128295805745,
+     "naive_per_10k": 24.170757993899002,
+     "km_per_10k": 24.204277379615835,
+     "expected_per_10k": 25.290608229265924,
+     "model30_per_10k": 25.355824132473234,
+     "O_E": 0.9557207076549845,
+     "exposures_by_type": {
+      "obs": 7087497,
+      "interp": 4130,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 17141,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 6493,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 2.13560729131789,
+    "ci": [
+     1.5763264163375148,
+     2.7915130182034438
+    ],
+    "n_valid": 200
+   },
+   "near_far_OEratio": {
+    "ratio": 2.096996104222262,
+    "ci": [
+     1.5609530722293552,
+     2.726496739769483
+    ],
+    "n_valid": 200
+   }
+  },
+  "confirm": {
+   "sets": {
+    "POD": {
+     "exposures": 39243,
+     "events": 52,
+     "censored": 1204,
+     "censored_share": 0.030680630940549906,
+     "naive_per_10k": 13.250770838111256,
+     "km_per_10k": 13.639971250335448,
+     "expected_per_10k": 26.60031152908543,
+     "model30_per_10k": 27.146893506240556,
+     "O_E": 0.4981434455616258,
+     "exposures_by_type": {
+      "obs": 37556,
+      "interp": 1687,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 52,
+      "interp": 0,
+      "ext": 0
+     },
+     "km_ci": [
+      8.873132794276485,
+      19.701874794054167
+     ],
+     "O_E_ci": [
+      0.36185320344042315,
+      0.6719064084637911
+     ]
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 2639,
+     "events": 6,
+     "censored": 90,
+     "censored_share": 0.034103827207275485,
+     "naive_per_10k": 22.735884804850322,
+     "km_per_10k": 23.38632635177862,
+     "expected_per_10k": 27.16260880023039,
+     "model30_per_10k": 27.877644881539926,
+     "O_E": 0.8370287615620146,
+     "exposures_by_type": {
+      "obs": 2575,
+      "interp": 64,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 6,
+      "interp": 0,
+      "ext": 0
+     },
+     "km_ci": [
+      4.025120772946867,
+      48.493032930259886
+     ],
+     "O_E_ci": [
+      0.1597084389430566,
+      1.7852141179314454
+     ]
+    },
+    "d2": {
+     "exposures": 3799,
+     "events": 7,
+     "censored": 123,
+     "censored_share": 0.032376941300342195,
+     "naive_per_10k": 18.425901553040273,
+     "km_per_10k": 19.00925751312288,
+     "expected_per_10k": 27.265397835243334,
+     "model30_per_10k": 27.743412696745306,
+     "O_E": 0.6757980083174469,
+     "exposures_by_type": {
+      "obs": 3683,
+      "interp": 116,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 7,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 11029,
+     "events": 13,
+     "censored": 353,
+     "censored_share": 0.0320065282437211,
+     "naive_per_10k": 11.78710671865083,
+     "km_per_10k": 12.157593772913478,
+     "expected_per_10k": 26.9082801846616,
+     "model30_per_10k": 27.421918435978153,
+     "O_E": 0.4380475689178299,
+     "exposures_by_type": {
+      "obs": 10557,
+      "interp": 472,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 13,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 21776,
+     "events": 26,
+     "censored": 638,
+     "censored_share": 0.029298310066127847,
+     "naive_per_10k": 11.939750183688464,
+     "km_per_10k": 12.276115704878965,
+     "expected_per_10k": 26.260159449824098,
+     "model30_per_10k": 26.814973996954233,
+     "O_E": 0.4546716559928749,
+     "exposures_by_type": {
+      "obs": 20741,
+      "interp": 1035,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 26,
+      "interp": 0,
+      "ext": 0
+     },
+     "km_ci": [
+      6.54721961170604,
+      17.4570658883155
+     ],
+     "O_E_ci": [
+      0.2774378776535452,
+      0.6361763890103741
+     ]
+    },
+    "REST": {
+     "exposures": 759681,
+     "events": 650,
+     "censored": 3749,
+     "censored_share": 0.004934966123938864,
+     "naive_per_10k": 8.556222940944949,
+     "km_per_10k": 8.579940881218162,
+     "expected_per_10k": 25.292941655389097,
+     "model30_per_10k": 25.482105023364376,
+     "O_E": 0.3382850068418949,
+     "exposures_by_type": {
+      "obs": 757140,
+      "interp": 2541,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 650,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 684,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 1.905026550253519,
+    "ci": [
+     0.3806097548731316,
+     5.001357256276929
+    ],
+    "n_valid": 200
+   },
+   "near_far_OEratio": {
+    "ratio": 1.8409521476199773,
+    "ci": [
+     0.35915455825883447,
+     4.773597896238096
+    ],
+    "n_valid": 200
+   }
+  }
+ },
+ "period_cluster": {
+  "2023H2|cluster0": {
+   "sets": {
+    "POD": {
+     "exposures": 80130,
+     "events": 204,
+     "censored": 323,
+     "censored_share": 0.0040309497067265694,
+     "naive_per_10k": 25.458629726694124,
+     "km_per_10k": 25.48910774226032,
+     "expected_per_10k": 25.353359480852095,
+     "model30_per_10k": 25.41383562527151,
+     "O_E": 1.0041521221643834,
+     "exposures_by_type": {
+      "obs": 80129,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 204,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 5599,
+     "events": 22,
+     "censored": 27,
+     "censored_share": 0.00482228969458832,
+     "naive_per_10k": 39.29273084479372,
+     "km_per_10k": 39.3626122691304,
+     "expected_per_10k": 26.08405243535288,
+     "model30_per_10k": 26.14840400346862,
+     "O_E": 1.5063890452673112,
+     "exposures_by_type": {
+      "obs": 5599,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 22,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 8005,
+     "events": 28,
+     "censored": 36,
+     "censored_share": 0.004497189256714554,
+     "naive_per_10k": 34.978138663335415,
+     "km_per_10k": 35.0321670336784,
+     "expected_per_10k": 27.054328633280527,
+     "model30_per_10k": 27.155010139488017,
+     "O_E": 1.2928851104553938,
+     "exposures_by_type": {
+      "obs": 8004,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 28,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 23172,
+     "events": 58,
+     "censored": 111,
+     "censored_share": 0.004790264111859141,
+     "naive_per_10k": 25.03020887277749,
+     "km_per_10k": 25.068768828211407,
+     "expected_per_10k": 25.597049132036776,
+     "model30_per_10k": 25.647141270023663,
+     "O_E": 0.97785524978542,
+     "exposures_by_type": {
+      "obs": 23172,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 58,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 43354,
+     "events": 96,
+     "censored": 149,
+     "censored_share": 0.003436822438529317,
+     "naive_per_10k": 22.143285509987546,
+     "km_per_10k": 22.162406750412256,
+     "expected_per_10k": 24.814673672975328,
+     "model30_per_10k": 24.872775775291647,
+     "O_E": 0.8923464318655504,
+     "exposures_by_type": {
+      "obs": 43354,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 96,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 1551256,
+     "events": 3715,
+     "censored": 6197,
+     "censored_share": 0.003994827417267041,
+     "naive_per_10k": 23.94833605800719,
+     "km_per_10k": 23.982214395663615,
+     "expected_per_10k": 24.527049764793393,
+     "model30_per_10k": 24.545472838545546,
+     "O_E": 0.9764050828641894,
+     "exposures_by_type": {
+      "obs": 1550678,
+      "interp": 578,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 3715,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 1442,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 1.7760982691285636
+   },
+   "near_far_OEratio": {
+    "ratio": 1.6881213298718927
+   }
+  },
+  "2023H2|other": {
+   "sets": {
+    "POD": {
+     "exposures": 9946,
+     "events": 8,
+     "censored": 1,
+     "censored_share": 0.00010054293183189222,
+     "naive_per_10k": 8.043434546551378,
+     "km_per_10k": 8.043737996044076,
+     "expected_per_10k": 12.699850475412626,
+     "model30_per_10k": 12.694240357229253,
+     "O_E": 0.6333487596664039,
+     "exposures_by_type": {
+      "obs": 9945,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 8,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 790,
+     "events": 0,
+     "censored": 1,
+     "censored_share": 0.0012658227848101266,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 14.078985928471457,
+     "model30_per_10k": 14.0680078578051,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 789,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 1109,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 13.90995186919198,
+     "model30_per_10k": 13.896411988320656,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 1109,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 3087,
+     "events": 5,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 16.196954972465175,
+     "km_per_10k": 16.19695497246387,
+     "expected_per_10k": 13.574187832649562,
+     "model30_per_10k": 13.586473449710446,
+     "O_E": 1.1932172423242262,
+     "exposures_by_type": {
+      "obs": 3087,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 5,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 4960,
+     "events": 3,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 6.048387096774194,
+     "km_per_10k": 6.048387096774244,
+     "expected_per_10k": 11.665455540854516,
+     "model30_per_10k": 11.651335473998458,
+     "O_E": 0.5184870042658564,
+     "exposures_by_type": {
+      "obs": 4960,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 3,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 193120,
+     "events": 240,
+     "censored": 32,
+     "censored_share": 0.00016570008285004143,
+     "naive_per_10k": 12.427506213753107,
+     "km_per_10k": 12.428563525030967,
+     "expected_per_10k": 12.179244791346571,
+     "model30_per_10k": 12.186048456488562,
+     "O_E": 1.0203839750871029,
+     "exposures_by_type": {
+      "obs": 193120,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 240,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 204,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 0.0
+   },
+   "near_far_OEratio": {
+    "ratio": 0.0
+   }
+  },
+  "2024|cluster0": {
+   "sets": {
+    "POD": {
+     "exposures": 189246,
+     "events": 700,
+     "censored": 875,
+     "censored_share": 0.004623611595489469,
+     "naive_per_10k": 36.98889276391575,
+     "km_per_10k": 37.05592359973142,
+     "expected_per_10k": 31.182682206285467,
+     "model30_per_10k": 31.299395284724923,
+     "O_E": 1.1861998438498638,
+     "exposures_by_type": {
+      "obs": 189245,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 700,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 12774,
+     "events": 99,
+     "censored": 65,
+     "censored_share": 0.0050884609362768125,
+     "naive_per_10k": 77.50117426021606,
+     "km_per_10k": 77.63117265230268,
+     "expected_per_10k": 31.584709226624,
+     "model30_per_10k": 31.824980293988666,
+     "O_E": 2.453756142066594,
+     "exposures_by_type": {
+      "obs": 12774,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 99,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 18358,
+     "events": 80,
+     "censored": 94,
+     "censored_share": 0.005120383484039656,
+     "naive_per_10k": 43.5777317790609,
+     "km_per_10k": 43.66887310397583,
+     "expected_per_10k": 31.26354788611035,
+     "model30_per_10k": 31.36180054510678,
+     "O_E": 1.3938831234960842,
+     "exposures_by_type": {
+      "obs": 18357,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 80,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 53707,
+     "events": 188,
+     "censored": 253,
+     "censored_share": 0.004710745340458413,
+     "naive_per_10k": 35.00474798443406,
+     "km_per_10k": 35.0718425063834,
+     "expected_per_10k": 31.08740718009186,
+     "model30_per_10k": 31.20778612156181,
+     "O_E": 1.1260105348010765,
+     "exposures_by_type": {
+      "obs": 53707,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 188,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 104407,
+     "events": 333,
+     "censored": 463,
+     "censored_share": 0.0044345685634104995,
+     "naive_per_10k": 31.894413209842252,
+     "km_per_10k": 31.95134509926256,
+     "expected_per_10k": 31.168285762787846,
+     "model30_per_10k": 31.27124194871851,
+     "O_E": 1.0232969965875163,
+     "exposures_by_type": {
+      "obs": 104407,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 333,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 3661279,
+     "events": 11553,
+     "censored": 16850,
+     "censored_share": 0.0046022168755781795,
+     "naive_per_10k": 31.554546921990923,
+     "km_per_10k": 31.60931665372346,
+     "expected_per_10k": 30.1361643346484,
+     "model30_per_10k": 30.247711494397315,
+     "O_E": 1.047065796814486,
+     "exposures_by_type": {
+      "obs": 3659377,
+      "interp": 1902,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 11553,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 3283,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 2.429668372681262
+   },
+   "near_far_OEratio": {
+    "ratio": 2.3978924498453167
+   }
+  },
+  "2024|other": {
+   "sets": {
+    "POD": {
+     "exposures": 38548,
+     "events": 91,
+     "censored": 4,
+     "censored_share": 0.00010376673238559718,
+     "naive_per_10k": 23.606931617723358,
+     "km_per_10k": 23.607921395264462,
+     "expected_per_10k": 14.622937230277467,
+     "model30_per_10k": 14.638282269741282,
+     "O_E": 1.6143768687486475,
+     "exposures_by_type": {
+      "obs": 38548,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 91,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 2828,
+     "events": 8,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 28.28854314002829,
+     "km_per_10k": 28.288543140028153,
+     "expected_per_10k": 14.745403991398577,
+     "model30_per_10k": 14.767846013610203,
+     "O_E": 1.918465113368872,
+     "exposures_by_type": {
+      "obs": 2828,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 8,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 3978,
+     "events": 9,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 22.624434389140273,
+     "km_per_10k": 22.62443438914019,
+     "expected_per_10k": 14.739711998550383,
+     "model30_per_10k": 14.756139423588134,
+     "O_E": 1.5349305597942031,
+     "exposures_by_type": {
+      "obs": 3978,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 9,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 11331,
+     "events": 30,
+     "censored": 2,
+     "censored_share": 0.00017650692789691997,
+     "naive_per_10k": 26.476039184537992,
+     "km_per_10k": 26.476117278038114,
+     "expected_per_10k": 14.88637078759148,
+     "model30_per_10k": 14.908507363551923,
+     "O_E": 1.7785422358690053,
+     "exposures_by_type": {
+      "obs": 11331,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 30,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 20411,
+     "events": 44,
+     "censored": 2,
+     "censored_share": 9.798637989319484e-05,
+     "naive_per_10k": 21.557003576502865,
+     "km_per_10k": 21.558708500073465,
+     "expected_per_10k": 14.436967328432132,
+     "model30_per_10k": 14.447347844008476,
+     "O_E": 1.4931808797577972,
+     "exposures_by_type": {
+      "obs": 20411,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 44,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 746717,
+     "events": 1220,
+     "censored": 212,
+     "censored_share": 0.0002839094328909078,
+     "naive_per_10k": 16.338184345608845,
+     "km_per_10k": 16.34043006748742,
+     "expected_per_10k": 14.397363922821247,
+     "model30_per_10k": 14.400285733382411,
+     "O_E": 1.134803873347343,
+     "exposures_by_type": {
+      "obs": 746660,
+      "interp": 57,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 1220,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 726,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 1.3121631632030164
+   },
+   "near_far_OEratio": {
+    "ratio": 1.284817626167339
+   }
+  },
+  "2025|cluster0": {
+   "sets": {
+    "POD": {
+     "exposures": 36942,
+     "events": 25,
+     "censored": 199,
+     "censored_share": 0.00538682258675762,
+     "naive_per_10k": 6.767365058740729,
+     "km_per_10k": 6.792165427038643,
+     "expected_per_10k": 22.68553796507175,
+     "model30_per_10k": 22.947379455076717,
+     "O_E": 0.2983118614669945,
+     "exposures_by_type": {
+      "obs": 36317,
+      "interp": 625,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 25,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 7,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 7,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 2433,
+     "events": 2,
+     "censored": 26,
+     "censored_share": 0.010686395396629675,
+     "naive_per_10k": 8.220304151253597,
+     "km_per_10k": 8.281601910189451,
+     "expected_per_10k": 23.76267987320146,
+     "model30_per_10k": 24.97084627907105,
+     "O_E": 0.34593337936282625,
+     "exposures_by_type": {
+      "obs": 2401,
+      "interp": 32,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 2,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 3508,
+     "events": 3,
+     "censored": 16,
+     "censored_share": 0.004561003420752566,
+     "naive_per_10k": 8.55188141391106,
+     "km_per_10k": 8.575512771613614,
+     "expected_per_10k": 22.755009656742445,
+     "model30_per_10k": 22.812054859830354,
+     "O_E": 0.3758241171028063,
+     "exposures_by_type": {
+      "obs": 3458,
+      "interp": 50,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 3,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 10184,
+     "events": 9,
+     "censored": 51,
+     "censored_share": 0.005007855459544384,
+     "naive_per_10k": 8.837391987431264,
+     "km_per_10k": 8.87186138728513,
+     "expected_per_10k": 22.46487402650625,
+     "model30_per_10k": 23.003176919838808,
+     "O_E": 0.39338711523617037,
+     "exposures_by_type": {
+      "obs": 10029,
+      "interp": 155,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 9,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 20810,
+     "events": 11,
+     "censored": 106,
+     "censored_share": 0.005093704949543489,
+     "naive_per_10k": 5.285920230658338,
+     "km_per_10k": 5.303067813662299,
+     "expected_per_10k": 22.663512369648693,
+     "model30_per_10k": 22.714030784840975,
+     "O_E": 0.23323482011276062,
+     "exposures_by_type": {
+      "obs": 20422,
+      "interp": 388,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 11,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 713957,
+     "events": 349,
+     "censored": 1750,
+     "censored_share": 0.0024511280091097922,
+     "naive_per_10k": 4.888249572453243,
+     "km_per_10k": 4.894818995566652,
+     "expected_per_10k": 21.336661137627306,
+     "model30_per_10k": 21.362982216097738,
+     "O_E": 0.2291009610605284,
+     "exposures_by_type": {
+      "obs": 712476,
+      "interp": 1481,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 349,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 629,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 1.5616624567488184
+   },
+   "near_far_OEratio": {
+    "ratio": 1.4831978312482672
+   }
+  },
+  "2025|other": {
+   "sets": {
+    "POD": {
+     "exposures": 11648,
+     "events": 1,
+     "censored": 87,
+     "censored_share": 0.007469093406593407,
+     "naive_per_10k": 0.8585164835164835,
+     "km_per_10k": 0.8642295393657129,
+     "expected_per_10k": 11.779872536180507,
+     "model30_per_10k": 11.835134243579352,
+     "O_E": 0.07287994678037901,
+     "exposures_by_type": {
+      "obs": 11641,
+      "interp": 7,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 1,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 807,
+     "events": 0,
+     "censored": 6,
+     "censored_share": 0.007434944237918215,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 12.486235088333359,
+     "model30_per_10k": 12.515336030635597,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 804,
+      "interp": 3,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 1155,
+     "events": 1,
+     "censored": 9,
+     "censored_share": 0.007792207792207792,
+     "naive_per_10k": 8.658008658008658,
+     "km_per_10k": 8.726003490401313,
+     "expected_per_10k": 12.709870992105957,
+     "model30_per_10k": 12.769478204513218,
+     "O_E": 0.6812035042201536,
+     "exposures_by_type": {
+      "obs": 1155,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 1,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 3399,
+     "events": 0,
+     "censored": 21,
+     "censored_share": 0.00617828773168579,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 12.290381496860565,
+     "model30_per_10k": 12.364398306479828,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 3398,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 6287,
+     "events": 0,
+     "censored": 51,
+     "censored_share": 0.008111977095594082,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 11.242350227681571,
+     "model30_per_10k": 11.290031862979436,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 6284,
+      "interp": 3,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 225298,
+     "events": 64,
+     "censored": 462,
+     "censored_share": 0.0020506174045042567,
+     "naive_per_10k": 2.8406821187937754,
+     "km_per_10k": 2.8435250906078124,
+     "expected_per_10k": 11.676316300428525,
+     "model30_per_10k": 11.690585735438443,
+     "O_E": 0.2432858142674262,
+     "exposures_by_type": {
+      "obs": 225186,
+      "interp": 112,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 64,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 209,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": null
+   },
+   "near_far_OEratio": {
+    "ratio": null
+   }
+  },
+  "2026H1|cluster0": {
+   "sets": {
+    "POD": {
+     "exposures": 28396,
+     "events": 40,
+     "censored": 619,
+     "censored_share": 0.021798844907733483,
+     "naive_per_10k": 14.08649105507818,
+     "km_per_10k": 14.366400948924163,
+     "expected_per_10k": 29.257219568414282,
+     "model30_per_10k": 29.667003816240868,
+     "O_E": 0.481470599833956,
+     "exposures_by_type": {
+      "obs": 26820,
+      "interp": 1576,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 40,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 1873,
+     "events": 5,
+     "censored": 51,
+     "censored_share": 0.027229044313934865,
+     "naive_per_10k": 26.695141484249866,
+     "km_per_10k": 27.263343913691564,
+     "expected_per_10k": 28.963495746877214,
+     "model30_per_10k": 29.531256554846784,
+     "O_E": 0.9216823037366987,
+     "exposures_by_type": {
+      "obs": 1810,
+      "interp": 63,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 5,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 2697,
+     "events": 6,
+     "censored": 65,
+     "censored_share": 0.024100852799406748,
+     "naive_per_10k": 22.246941045606228,
+     "km_per_10k": 22.754661581467772,
+     "expected_per_10k": 28.73507579769599,
+     "model30_per_10k": 29.111358328779723,
+     "O_E": 0.7742085387987739,
+     "exposures_by_type": {
+      "obs": 2584,
+      "interp": 113,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 6,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 7876,
+     "events": 10,
+     "censored": 175,
+     "censored_share": 0.022219400711020822,
+     "naive_per_10k": 12.696800406297614,
+     "km_per_10k": 12.961453635353948,
+     "expected_per_10k": 29.39998094264167,
+     "model30_per_10k": 29.742226429654746,
+     "O_E": 0.4318642393363664,
+     "exposures_by_type": {
+      "obs": 7431,
+      "interp": 445,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 10,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 15950,
+     "events": 19,
+     "censored": 328,
+     "censored_share": 0.020564263322884014,
+     "naive_per_10k": 11.912225705329154,
+     "km_per_10k": 12.136891234670877,
+     "expected_per_10k": 29.309506583082086,
+     "model30_per_10k": 29.739754737684493,
+     "O_E": 0.40642873572648547,
+     "exposures_by_type": {
+      "obs": 14995,
+      "interp": 955,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 19,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 551792,
+     "events": 518,
+     "censored": 2192,
+     "censored_share": 0.003972511381100124,
+     "naive_per_10k": 9.38759532577493,
+     "km_per_10k": 9.407316170163549,
+     "expected_per_10k": 27.317166114814174,
+     "model30_per_10k": 27.550137482695778,
+     "O_E": 0.3436518739286068,
+     "exposures_by_type": {
+      "obs": 550200,
+      "interp": 1592,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 518,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 486,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 2.246320197367319
+   },
+   "near_far_OEratio": {
+    "ratio": 2.26775870581396
+   }
+  },
+  "2026H1|other": {
+   "sets": {
+    "POD": {
+     "exposures": 10847,
+     "events": 12,
+     "censored": 585,
+     "censored_share": 0.053931962754678715,
+     "naive_per_10k": 11.062966718908454,
+     "km_per_10k": 11.675342440069514,
+     "expected_per_10k": 19.644880471209298,
+     "model30_per_10k": 20.549580667412414,
+     "O_E": 0.5631475709471415,
+     "exposures_by_type": {
+      "obs": 10736,
+      "interp": 111,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 12,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d0": {
+     "exposures": 0,
+     "events": 0,
+     "censored": 0,
+     "censored_share": 0.0,
+     "naive_per_10k": 0.0,
+     "km_per_10k": 0.0,
+     "expected_per_10k": 0.0,
+     "model30_per_10k": 0.0,
+     "O_E": 0.0,
+     "exposures_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 0,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d1": {
+     "exposures": 766,
+     "events": 1,
+     "censored": 39,
+     "censored_share": 0.050913838120104436,
+     "naive_per_10k": 13.054830287206267,
+     "km_per_10k": 13.6986301369868,
+     "expected_per_10k": 22.759134582123995,
+     "model30_per_10k": 23.83428370124781,
+     "O_E": 0.5736083786533822,
+     "exposures_by_type": {
+      "obs": 765,
+      "interp": 1,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 1,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d2": {
+     "exposures": 1102,
+     "events": 1,
+     "censored": 58,
+     "censored_share": 0.05263157894736842,
+     "naive_per_10k": 9.074410163339383,
+     "km_per_10k": 9.551098376313627,
+     "expected_per_10k": 23.668554400819726,
+     "model30_per_10k": 24.39554575518736,
+     "O_E": 0.3833952006390852,
+     "exposures_by_type": {
+      "obs": 1099,
+      "interp": 3,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 1,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d3": {
+     "exposures": 3153,
+     "events": 3,
+     "censored": 178,
+     "censored_share": 0.05645417063114494,
+     "naive_per_10k": 9.514747859181732,
+     "km_per_10k": 10.075006841619993,
+     "expected_per_10k": 20.684165002342827,
+     "model30_per_10k": 21.625931833315008,
+     "O_E": 0.460001545051687,
+     "exposures_by_type": {
+      "obs": 3126,
+      "interp": 27,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 3,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "d4": {
+     "exposures": 5826,
+     "events": 7,
+     "censored": 310,
+     "censored_share": 0.05320974939924476,
+     "naive_per_10k": 12.01510470305527,
+     "km_per_10k": 12.670030381523034,
+     "expected_per_10k": 17.91187816326984,
+     "model30_per_10k": 18.807721539925865,
+     "O_E": 0.6707897738883398,
+     "exposures_by_type": {
+      "obs": 5746,
+      "interp": 80,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 7,
+      "interp": 0,
+      "ext": 0
+     }
+    },
+    "REST": {
+     "exposures": 207889,
+     "events": 132,
+     "censored": 1557,
+     "censored_share": 0.0074895737629215595,
+     "naive_per_10k": 6.349542303825599,
+     "km_per_10k": 6.378349983808818,
+     "expected_per_10k": 19.920118355863494,
+     "model30_per_10k": 19.99300378761165,
+     "O_E": 0.31875022981259593,
+     "exposures_by_type": {
+      "obs": 206940,
+      "interp": 949,
+      "ext": 0
+     },
+     "events_by_type": {
+      "obs": 132,
+      "interp": 0,
+      "ext": 0
+     }
+    }
+   },
+   "index_by_type": {
+    "obs": 198,
+    "interp": 0,
+    "ext": 0,
+    "ext_blocked": 0
+   },
+   "near_far_KM": {
+    "ratio": 1.0811836850023497
+   },
+   "near_far_OEratio": {
+    "ratio": 0.8551239165862202
+   }
+  }
+ }
+}

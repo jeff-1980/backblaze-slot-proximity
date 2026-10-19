@@ -1,0 +1,134 @@
+{
+ "k2023h2c.parquet": {
+  "n_failures": 1723,
+  "n_no_located_record_before_failure": 0,
+  "F_minus_L": {
+   "n": 1723,
+   "p5": 0.0,
+   "p25": 0.0,
+   "p50": 0.0,
+   "p75": 0.0,
+   "p95": 0.0
+  },
+  "share_F_on_located_day": 0.955310504933256,
+  "share_F_le_14_after_L": 0.9994196169471852,
+  "R_minus_L": {
+   "n": 1723,
+   "p5": 1.0,
+   "p25": 1.0,
+   "p50": 2.0,
+   "p75": 2.0,
+   "p95": 4.0
+  },
+  "R_minus_F": {
+   "n": 1723,
+   "p5": 1.0,
+   "p25": 1.0,
+   "p50": 1.0,
+   "p75": 2.0,
+   "p95": 4.0
+  },
+  "share_with_replacement": 1.0,
+  "share_replacement_on_or_before_F": 0.0,
+  "share_replacement_on_or_before_F_among_ext": 0.0
+ },
+ "k2024.parquet": {
+  "n_failures": 4197,
+  "n_no_located_record_before_failure": 1,
+  "F_minus_L": {
+   "n": 4197,
+   "p5": 0.0,
+   "p25": 0.0,
+   "p50": 0.0,
+   "p75": 0.0,
+   "p95": 0.0
+  },
+  "share_F_on_located_day": 0.9552060995949487,
+  "share_F_le_14_after_L": 0.9995234691446271,
+  "R_minus_L": {
+   "n": 4156,
+   "p5": 1.0,
+   "p25": 1.0,
+   "p50": 2.0,
+   "p75": 3.0,
+   "p95": 7.0
+  },
+  "R_minus_F": {
+   "n": 4156,
+   "p5": 1.0,
+   "p25": 1.0,
+   "p50": 2.0,
+   "p75": 3.0,
+   "p95": 7.0
+  },
+  "share_with_replacement": 0.9902311174648558,
+  "share_replacement_on_or_before_F": 0.0002382654276864427,
+  "share_replacement_on_or_before_F_among_ext": 0.005376344086021506
+ },
+ "k2025.parquet": {
+  "n_failures": 4140,
+  "n_no_located_record_before_failure": 0,
+  "F_minus_L": {
+   "n": 4140,
+   "p5": 0.0,
+   "p25": 1.0,
+   "p50": 1.0,
+   "p75": 2.0,
+   "p95": 11.0
+  },
+  "share_F_on_located_day": 0.20241545893719806,
+  "share_F_le_14_after_L": 0.9659420289855073,
+  "R_minus_L": {
+   "n": 4113,
+   "p5": 1.0,
+   "p25": 1.0,
+   "p50": 2.0,
+   "p75": 4.0,
+   "p95": 15.0
+  },
+  "R_minus_F": {
+   "n": 4113,
+   "p5": 0.0,
+   "p25": 0.0,
+   "p50": 1.0,
+   "p75": 2.0,
+   "p95": 7.0
+  },
+  "share_with_replacement": 0.9934782608695653,
+  "share_replacement_on_or_before_F": 0.43816425120772945,
+  "share_replacement_on_or_before_F_among_ext": 0.5469788041758937
+ },
+ "k2026c.parquet": {
+  "n_failures": 2145,
+  "n_no_located_record_before_failure": 0,
+  "F_minus_L": {
+   "n": 2145,
+   "p5": 0.0,
+   "p25": 0.0,
+   "p50": 1.0,
+   "p75": 1.0,
+   "p95": 20.0
+  },
+  "share_F_on_located_day": 0.31888111888111886,
+  "share_F_le_14_after_L": 0.9291375291375291,
+  "R_minus_L": {
+   "n": 2120,
+   "p5": 1.0,
+   "p25": 1.0,
+   "p50": 3.0,
+   "p75": 9.0,
+   "p95": 29.0
+  },
+  "R_minus_F": {
+   "n": 2120,
+   "p5": 0.0,
+   "p25": 0.0,
+   "p50": 1.0,
+   "p75": 4.0,
+   "p95": 21.0
+  },
+  "share_with_replacement": 0.9883449883449883,
+  "share_replacement_on_or_before_F": 0.3678321678321678,
+  "share_replacement_on_or_before_F_among_ext": 0.5393430099312452
+ }
+}

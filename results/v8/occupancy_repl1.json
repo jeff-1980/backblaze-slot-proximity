@@ -1,0 +1,125 @@
+{
+ "config": {
+  "REPL": 1,
+  "GAPI": 14,
+  "GAPE": 14
+ },
+ "periods": [
+  {
+   "runs": "results/v6runs/runs_k2023h2.parquet",
+   "k": "data/k2023h2c.parquet",
+   "location_days_observed": 47568092,
+   "conflict_days_observed": 0,
+   "location_days_all": 47743018,
+   "conflict_days_all": 0,
+   "conflict_days_added_by_reconstruction": 0,
+   "index_locations": {
+    "obs": {
+     "n": 1646,
+     "failed_drive_placed": 1646,
+     "other_drive_placed": 0,
+     "both": 0
+    },
+    "ext": {
+     "n": 76,
+     "failed_drive_placed": 76,
+     "other_drive_placed": 0,
+     "both": 0
+    },
+    "ext_blocked": {
+     "n": 0,
+     "failed_drive_placed": 0,
+     "other_drive_placed": 0,
+     "both": 0
+    }
+   }
+  },
+  {
+   "runs": "results/v6runs/runs_k2024.parquet",
+   "k": "data/k2024.parquet",
+   "location_days_observed": 103807586,
+   "conflict_days_observed": 0,
+   "location_days_all": 103885847,
+   "conflict_days_all": 0,
+   "conflict_days_added_by_reconstruction": 0,
+   "index_locations": {
+    "obs": {
+     "n": 4009,
+     "failed_drive_placed": 4009,
+     "other_drive_placed": 0,
+     "both": 0
+    },
+    "ext": {
+     "n": 185,
+     "failed_drive_placed": 185,
+     "other_drive_placed": 0,
+     "both": 0
+    },
+    "ext_blocked": {
+     "n": 1,
+     "failed_drive_placed": 0,
+     "other_drive_placed": 1,
+     "both": 0
+    }
+   }
+  },
+  {
+   "runs": "results/v6runs/runs_k2025.parquet",
+   "k": "data/k2025.parquet",
+   "location_days_observed": 115800337,
+   "conflict_days_observed": 7,
+   "location_days_all": 115995374,
+   "conflict_days_all": 7,
+   "conflict_days_added_by_reconstruction": 0,
+   "index_locations": {
+    "obs": {
+     "n": 838,
+     "failed_drive_placed": 838,
+     "other_drive_placed": 7,
+     "both": 7
+    },
+    "ext": {
+     "n": 1432,
+     "failed_drive_placed": 1432,
+     "other_drive_placed": 0,
+     "both": 0
+    },
+    "ext_blocked": {
+     "n": 1729,
+     "failed_drive_placed": 0,
+     "other_drive_placed": 1729,
+     "both": 0
+    }
+   }
+  },
+  {
+   "runs": "results/v6runs/runs_k2026.parquet",
+   "k": "data/k2026c.parquet",
+   "location_days_observed": 61792695,
+   "conflict_days_observed": 0,
+   "location_days_all": 61914221,
+   "conflict_days_all": 0,
+   "conflict_days_added_by_reconstruction": 0,
+   "index_locations": {
+    "obs": {
+     "n": 684,
+     "failed_drive_placed": 684,
+     "other_drive_placed": 0,
+     "both": 0
+    },
+    "ext": {
+     "n": 603,
+     "failed_drive_placed": 603,
+     "other_drive_placed": 0,
+     "both": 0
+    },
+    "ext_blocked": {
+     "n": 706,
+     "failed_drive_placed": 0,
+     "other_drive_placed": 706,
+     "both": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+dd_contagion.py I/O fixes (no analysis logic, thresholds, seeds or windows changed)
+
+2026-10-15  build(): accept slim parquet input.
+  Reason: disk space. 2023 Q3/Q4 zips were reduced per quarter to one zstd parquet each
+  (~/bb2023h2_slim/Q3_2023.parquet, Q4_2023.parquet) holding only date, serial_number, model,
+  failure, vault_id, pod_id, pod_slot_num, smart_9_raw, all varchar (read from the CSVs with the same
+  read_csv options as build: union_by_name, header, all_varchar, ignore_errors); the CSVs and zips were then deleted.
+  Change: if <src> has no CSVs in range but has *.parquet files, read_parquet(those, union_by_name) filtered
+  to start <= date <= end replaces the read_csv source. The aggregation SQL is unchanged.
+  n_files is then the number of distinct dates in range (equals the daily-file count for CSV input).
+  2024 and 2025 builds still read the original CSVs (unchanged code path).
+
+dd_mechanism.py I/O fixes (no analysis logic, thresholds, seeds or windows changed)
+
+2026-10-15  part_B(): skip macOS AppleDouble files.
+  Reason: ~/bb2024/data_Q4_2024/__MACOSX/... holds 366 "._YYYY-MM-DD.csv" resource-fork stubs (not data)
+  that the recursive *.csv glob picked up (dd_contagion.build excludes them via its date-prefix filter).
+  Change: drop files whose basename starts with "._" from the file list. 731 daily CSVs remain (2024+2025).
+
+2026-10-15  part_B(): DuckDB memory / spill settings.
+  Reason: first Part B run failed after 66 s: "IO Error: Could not write file .tmp/duckdb_temp_storage...:
+  Cannot allocate memory" (RSS 14.1 GB of 15 GB WSL RAM; default spill dir was ./.tmp on /mnt/c).
+  Change: PRAGMA memory_limit='8GB'; PRAGMA temp_directory='~/dd/duckdb_tmp'; SET max_temp_directory_size='15GB'
+  (the WSL disk image lives on C:, cap keeps C: >= 10 GB free). Query text unchanged.
+
+2026-10-15 12:4x dd_residency.py config only (no logic change), per coordinator option (b) after 2025 hit the 10 GB temp-spill cap: PRAGMA threads 4 -> 2; added SET preserve_insertion_order=false. Rerun 2025 alone -> dd_residency_2025only.json/_log.txt.
+
+dd_rekey.py I/O fix (no analysis logic, key definition or aggregation changed)
+
+2026-10-15  csv_src(): accept slim parquet input (same fix as dd_contagion build). Approved by jeff 06:33 UTC.
+  Reason: disk space. 2023 Q3/Q4 and 2026 Q1/Q2 zips were re-fetched and reduced per quarter to one zstd
+  parquet each (~/bb2023h2_slim_k/, ~/bb2026_slim_k/) holding date, serial_number, model, failure, datacenter,
+  cluster_id, vault_id, pod_id, pod_slot_num, smart_9_raw, all varchar (read one daily CSV at a time with the
+  same read_csv options: union_by_name, header, all_varchar, ignore_errors); zips and CSVs then deleted.
+  Change: if <src> has no CSVs in range but has *.parquet files, read_parquet(those, union_by_name=true)
+  filtered to start <= date <= end replaces the read_csv source. The aggregation SQL is unchanged.
+  n_files is then the number of distinct dates in range (equals the daily-file count for CSV input).
+  2024 and 2025 builds still read the original CSVs (unchanged code path).
+
+Release edit (2026-10-17, I/O only)
+  dd_slim_k.py: the free-space guard read the author's Windows drive (/mnt/c); it now reads $FREE_CHECK_PATH,
+  defaulting to <tmpdir>. No other script was changed for the release; the scripts in code/ are the versions
+  that produced results/. preregistration/ holds the copies frozen on 2026-10-14 (SHA-256 in FROZEN.txt).

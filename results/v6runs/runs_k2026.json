@@ -1,0 +1,15 @@
+{
+ "label": "k2026",
+ "src": "/home/jeffwork/bb2026_slim_k",
+ "start": "2026-01-01",
+ "end": "2026-06-30",
+ "buckets": 8,
+ "rows": 61792695,
+ "serials": 359401,
+ "serials_irregular": 40967,
+ "serials_multi_location": 767,
+ "runs": 416409,
+ "failure_records": 810,
+ "failed_runs": 810,
+ "slot_changes_within_pod": 676
+}

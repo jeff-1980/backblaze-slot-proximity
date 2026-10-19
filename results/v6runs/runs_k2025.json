@@ -1,0 +1,15 @@
+{
+ "label": "k2025",
+ "src": "/home/jeffwork/bb2025",
+ "start": "2025-01-01",
+ "end": "2025-12-31",
+ "buckets": 8,
+ "rows": 115801994,
+ "serials": 345196,
+ "serials_irregular": 103461,
+ "serials_multi_location": 154,
+ "runs": 485281,
+ "failure_records": 877,
+ "failed_runs": 877,
+ "slot_changes_within_pod": 28
+}

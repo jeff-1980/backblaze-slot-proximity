@@ -1,0 +1,19 @@
+{
+  "title": "Slot-adjacent drive failures cluster within servers: code, derived data and results",
+  "upload_type": "software",
+  "description": "Code, derived per-drive tables and results for the manuscript 'Slot-adjacent drive failures cluster within servers, with heterogeneous effects across a public storage fleet'. Source data: Backblaze Drive Stats, July 2023 to June 2026. Code under MIT, derived data and results under CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Wang, Yi",
+      "affiliation": "Lishui University"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "hard disk drives",
+    "correlated failures",
+    "storage reliability",
+    "Backblaze"
+  ],
+  "access_right": "open"
+}

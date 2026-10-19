@@ -1,0 +1,67 @@
+### 2026-10-18T08:09:31+08:00 START idcheck avail_MB=14566
+{"src": "/home/jeffwork/bb2023h2_slim_k", "start": "2023-07-01", "end": "2023-12-31", "rows": 48392985, "serials": 286930, "days": 184, "rows_cluster_null": 0, "rows_dc_null": 904646, "vault_key_days_multi_dc": 0, "days_with_vault_multi_dc": 0, "pod_key_days_multi_dc": 0, "days_with_pod_multi_dc": 0, "loc_days": 47568134, "loc_days_2plus": 0, "loc_share_2plus": 0.0, "loc_dc_days": 47568134, "loc_dc_days_2plus": 0, "loc_dc_share_2plus": 0.0, "changes_pod": 157, "changes_cluster_only": 0, "changes_with_dc_change": 0, "serials_with_pod_change": 136, "serials_multi_cluster": 0, "serials_multi_dc": 0, "reverting_pod_changes_7d": 0}
+{"src": "/home/jeffwork/bb2023h2_slim_k", "start": "2023-07-01", "end": "2023-09-30", "rows": 23601986, "serials": 269665, "days": 92, "rows_cluster_null": 0, "rows_dc_null": 551558, "vault_key_days_multi_dc": 0, "days_with_vault_multi_dc": 0, "pod_key_days_multi_dc": 0, "days_with_pod_multi_dc": 0, "loc_days": 23187667, "loc_days_2plus": 0, "loc_share_2plus": 0.0, "loc_dc_days": 23187667, "loc_dc_days_2plus": 0, "loc_dc_share_2plus": 0.0, "changes_pod": 82, "changes_cluster_only": 0, "changes_with_dc_change": 0, "serials_with_pod_change": 68, "serials_multi_cluster": 0, "serials_multi_dc": 0, "reverting_pod_changes_7d": 0}
+Traceback (most recent call last):
+  File "/mnt/c/Users/ThinkPad/claude_project/deepdive/dd_idcheck.py", line 72, in <module>
+    res.append(check(*a[i:i + 3]))
+               ^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/ThinkPad/claude_project/deepdive/dd_idcheck.py", line 55, in check
+    o["changes_cluster_only"] = q("SELECT count(*) FROM ch WHERE pd IS NOT NULL AND c <> pc AND v = pv AND p = pp AND dc = pdc")[0][0]
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/ThinkPad/claude_project/deepdive/dd_idcheck.py", line 38, in <lambda>
+    q = lambda sql: con.execute(sql).fetchall()
+                    ^^^^^^^^^^^^^^^^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (11.1 GiB/11.1 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Command exited with non-zero status 1
+### WALL 403.21 s MAXRSS 6666132 kB EXIT 1
+### 2026-10-18T08:16:15+08:00 START mechB avail_MB=14587
+/mnt/c/Users/ThinkPad/claude_project/deepdive/dd_mechanism.py:163: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  D["err"] = D[["smart_5_raw", "smart_187_raw", "smart_188_raw", "smart_197_raw", "smart_198_raw"]].fillna(0).sum(1)
+{
+  "n_index": 8813,
+  "n_near": 44969,
+  "n_far": 34287,
+  "n_panel_rows": 4626091,
+  "B1_thermal": {
+    "DiD": -0.005318538116897791,
+    "lo": -0.018743566803481347,
+    "hi": 0.007037738293782807,
+    "near_mean": -0.025106668056542894,
+    "far_mean": -0.019788129939645103,
+    "n_near": 34354,
+    "n_far": 33165
+  },
+  "B1_support": false,
+  "B2_stress": {
+    "DiD": 0.0009029374558087431,
+    "lo": -0.0016908821451563916,
+    "hi": 0.003532979568017529,
+    "near_mean": 0.00398488089308213,
+    "far_mean": 0.0030819434372733865,
+    "n_near": 34129,
+    "n_far": 33096
+  },
+  "B2_support": false,
+  "B1_index_minus_far_pre_temp": {
+    "mean": 0.2449356239349884,
+    "n": 8538
+  }
+}
+### WALL 271.41 s MAXRSS 10391104 kB EXIT 0
+### DONE 2026-10-18T08:20:46+08:00
+### 2026-10-18T08:39:07+08:00 START idcheck rerun avail_MB=14595
+{"src": "/home/jeffwork/bb2024", "start": "2024-01-01", "end": "2024-12-31", "rows": 105379761, "serials": 330927, "days": 366, "rows_cluster_null": 0, "rows_dc_null": 5753390, "vault_key_days_multi_dc": 0, "days_with_vault_multi_dc": 0, "pod_key_days_multi_dc": 0, "days_with_pod_multi_dc": 0, "loc_days": 103815400, "loc_days_2plus": 0, "loc_share_2plus": 0.0, "loc_dc_days": 103815400, "loc_dc_days_2plus": 0, "loc_dc_share_2plus": 0.0, "serials_multi_key": 42358, "changes_pod": 676, "changes_cluster_only": 0, "changes_with_dc_change": 30, "serials_with_pod_change": 492, "serials_multi_cluster": 14, "serials_multi_dc": 30, "reverting_pod_changes_7d": 0}
+{"src": "/home/jeffwork/bb2025", "start": "2025-01-01", "end": "2025-12-31", "rows": 117394187, "serials": 349462, "days": 365, "rows_cluster_null": 0, "rows_dc_null": 0, "vault_key_days_multi_dc": 0, "days_with_vault_multi_dc": 0, "pod_key_days_multi_dc": 0, "days_with_pod_multi_dc": 0, "loc_days": 115801987, "loc_days_2plus": 7, "loc_share_2plus": 6.044801286527148e-08, "loc_dc_days": 115801987, "loc_dc_days_2plus": 7, "loc_dc_share_2plus": 6.044801286527148e-08, "serials_multi_key": 182, "changes_pod": 190, "changes_cluster_only": 0, "changes_with_dc_change": 0, "serials_with_pod_change": 182, "serials_multi_cluster": 7, "serials_multi_dc": 0, "reverting_pod_changes_7d": 0}
+{"src": "/home/jeffwork/bb2026_slim_k", "start": "2026-01-01", "end": "2026-06-30", "rows": 62565487, "serials": 363548, "days": 181, "rows_cluster_null": 0, "rows_dc_null": 0, "vault_key_days_multi_dc": 0, "days_with_vault_multi_dc": 0, "pod_key_days_multi_dc": 0, "days_with_pod_multi_dc": 0, "loc_days": 61792695, "loc_days_2plus": 0, "loc_share_2plus": 0.0, "loc_dc_days": 61792695, "loc_dc_days_2plus": 0, "loc_dc_share_2plus": 0.0, "serials_multi_key": 119, "changes_pod": 122, "changes_cluster_only": 0, "changes_with_dc_change": 0, "serials_with_pod_change": 119, "serials_multi_cluster": 6, "serials_multi_dc": 0, "reverting_pod_changes_7d": 0}
+### WALL 610.28 s MAXRSS 6584788 kB EXIT 0
+### DONE rerun 2026-10-18T08:49:17+08:00

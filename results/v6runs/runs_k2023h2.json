@@ -1,0 +1,15 @@
+{
+ "label": "k2023h2",
+ "src": "/home/jeffwork/bb2023h2_slim_k",
+ "start": "2023-07-01",
+ "end": "2023-12-31",
+ "rows": 47568134,
+ "serials": 282236,
+ "serials_irregular": 120578,
+ "serials_multi_location": 123,
+ "runs": 439727,
+ "failure_records": 1879,
+ "failed_runs": 1855,
+ "runs_per_irregular_serial": 2.3061337889167177,
+ "slot_changes_within_pod": 1
+}

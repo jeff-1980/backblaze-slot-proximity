@@ -1,0 +1,4 @@
+frozen 2026-10-14T17:31:36Z
+936eb3c463391a19ad86012b36d88c79340ae336316197beb9358cad21b8296d *dd_contagion.py
+aed1863fa826ad99019b3dadfed1bf72071ac429ac440ae3d513e2c844293138 *dd_batch_diag.py
+verification: dd_explore_rerun_check.json reproduces dd_explore_2023h2_2025.json for all H1-H5 and all 56 original table rows (main and S1)

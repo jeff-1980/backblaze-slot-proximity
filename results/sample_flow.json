@@ -1,0 +1,100 @@
+[
+ {
+  "period": "k2023h2c",
+  "drives": 286930,
+  "drives_with_server": 286930,
+  "drives_with_slot": 282236,
+  "servers_new_key": 5140,
+  "servers_with_slot": 5140,
+  "servers_old_key": 4340,
+  "vaults": 257,
+  "classes": {
+   "60": 3920,
+   "45": 700,
+   "26": 520,
+   ">60": 0
+  },
+  "index_failures": 1968,
+  "dcs": [
+   "ams5",
+   "iad1",
+   "phx1",
+   "sac0",
+   "sac2"
+  ]
+ },
+ {
+  "period": "k2024",
+  "drives": 330927,
+  "drives_with_server": 330927,
+  "drives_with_slot": 326291,
+  "servers_new_key": 5780,
+  "servers_with_slot": 5780,
+  "servers_old_key": 4780,
+  "vaults": 289,
+  "classes": {
+   "60": 4780,
+   "26": 520,
+   "45": 480,
+   ">60": 0
+  },
+  "index_failures": 4529,
+  "dcs": [
+   "ams5",
+   "iad1",
+   "phx1",
+   "sac0",
+   "sac2"
+  ]
+ },
+ {
+  "period": "k2025",
+  "drives": 349462,
+  "drives_with_server": 349462,
+  "drives_with_slot": 345196,
+  "servers_new_key": 6001,
+  "servers_with_slot": 6000,
+  "servers_old_key": 5020,
+  "vaults": 300,
+  "classes": {
+   "60": 5380,
+   "26": 520,
+   "45": 100,
+   ">60": 0
+  },
+  "index_failures": 4284,
+  "dcs": [
+   "ams5",
+   "iad1",
+   "phx1",
+   "sac0",
+   "sac2",
+   "yyz1"
+  ]
+ },
+ {
+  "period": "k2026c",
+  "drives": 363548,
+  "drives_with_server": 363548,
+  "drives_with_slot": 359401,
+  "servers_new_key": 6260,
+  "servers_with_slot": 6260,
+  "servers_old_key": 5176,
+  "vaults": 315,
+  "classes": {
+   "60": 5680,
+   "26": 520,
+   "45": 60,
+   ">60": 0
+  },
+  "index_failures": 2483,
+  "dcs": [
+   "ams5",
+   "iad1",
+   "phx1",
+   "sac0",
+   "sac2",
+   "yyz1"
+  ]
+ }
+]

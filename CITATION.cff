@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Slot-adjacent drive failures cluster within servers: code, derived data and results"
+type: software
+authors:
+  - family-names: "Wang"
+    given-names: "Yi"
+    affiliation: "Lishui University"
+license: [MIT, CC-BY-4.0]
+version: "1.0.0"
+repository-code: "https://github.com/jeff-1980/backblaze-slot-proximity"
+keywords: [hard disk drives, correlated failures, storage reliability, Backblaze, data centres]
