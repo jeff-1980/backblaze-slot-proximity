@@ -1,6 +1,6 @@
 # Slot-adjacent drive failures: code, derived data and results
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23478229.svg)](https://doi.org/10.5281/zenodo.23478229)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23486544.svg)](https://doi.org/10.5281/zenodo.23486544)
 
 Code, derived per-drive tables and result files for the manuscript "Slot-adjacent drive failures cluster within servers, with heterogeneous effects across a public storage fleet".
 
@@ -64,4 +64,4 @@ The shared-link test is part of `dd_audit.py`, which `run_corrected.sh` runs.
 
 ## Citation
 
-See `CITATION.cff`. Release v1.0.0 is archived at Zenodo: [https://doi.org/10.5281/zenodo.23478229](https://doi.org/10.5281/zenodo.23478229).
+See `CITATION.cff`. Release v1.1.0 is archived at Zenodo: [https://doi.org/10.5281/zenodo.23486544](https://doi.org/10.5281/zenodo.23486544). Release v1.0.0: [https://doi.org/10.5281/zenodo.23478229](https://doi.org/10.5281/zenodo.23478229).
