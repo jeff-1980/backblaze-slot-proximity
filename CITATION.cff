@@ -8,6 +8,7 @@ authors:
     affiliation: "Lishui University"
 license: [MIT, CC-BY-4.0]
 version: "1.2.0"
+doi: "10.5281/zenodo.23493706"
 date-released: "2026-10-20"
 repository-code: "https://github.com/jeff-1980/backblaze-slot-proximity"
 keywords: [hard disk drives, correlated failures, storage reliability, Backblaze, data centres]

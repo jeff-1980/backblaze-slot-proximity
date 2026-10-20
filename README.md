@@ -1,6 +1,6 @@
 # Local clustering of recorded drive failures within servers: code, derived data and results
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23486544.svg)](https://doi.org/10.5281/zenodo.23486544)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23493706.svg)](https://doi.org/10.5281/zenodo.23493706)
 
 Code, derived per-drive tables and result files for the manuscript "Local clustering of recorded drive failures within servers of one storage operator".
 
@@ -64,4 +64,4 @@ The shared-link test is part of `dd_audit.py`, which `run_corrected.sh` runs.
 
 ## Citation
 
-See `CITATION.cff`. Release v1.2.0 adds `code/dd_v15_review.py` and `results/v15/`. Release v1.1.0 is archived at Zenodo: [https://doi.org/10.5281/zenodo.23486544](https://doi.org/10.5281/zenodo.23486544). Release v1.0.0: [https://doi.org/10.5281/zenodo.23478229](https://doi.org/10.5281/zenodo.23478229).
+See `CITATION.cff`. Release v1.2.0, which adds `code/dd_v15_review.py` and `results/v15/`, is archived at Zenodo: [https://doi.org/10.5281/zenodo.23493706](https://doi.org/10.5281/zenodo.23493706). Release v1.1.0: [https://doi.org/10.5281/zenodo.23486544](https://doi.org/10.5281/zenodo.23486544). Release v1.0.0: [https://doi.org/10.5281/zenodo.23478229](https://doi.org/10.5281/zenodo.23478229).
