@@ -77,7 +77,9 @@ def logit_fit(X, y, w, iters=30):
 
 
 def auc(s, y):
-    order = np.argsort(s); r = np.empty(len(s)); r[order] = np.arange(1, len(s) + 1)
+    # FIX 2026-10-24: average ranks for tied scores (argsort gave arbitrary ranks to ties; mock review AUD-03)
+    from scipy.stats import rankdata
+    r = rankdata(s, method="average")
     n1 = y.sum(); n0 = len(y) - n1
     return float((r[y == 1].sum() - n1 * (n1 + 1) / 2) / (n1 * n0))
 

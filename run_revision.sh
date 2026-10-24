@@ -3,7 +3,7 @@
 # Output goes to results_rerun/revision/. The index-day cohort steps read the daily location runs in results/v6runs/,
 # which dd_v6_runs.py builds from the Backblaze daily files (not included).
 set -euo pipefail
-cd "$(dirname "$0")"; P=${PYTHON:-python3}; D=data; O=results_rerun/revision; R=results/v6runs; mkdir -p $O/v7 $O/v8 $O/v10 $O/v15
+cd "$(dirname "$0")"; P=${PYTHON:-python3}; D=data; O=results_rerun/revision; R=results/v6runs; mkdir -p $O/v7 $O/v8 $O/v10 $O/v15 $O/v16 $O/v17
 K="$D/k2023h2c.parquet $D/k2024.parquet $D/k2025.parquet $D/k2026c.parquet"
 # unified run: Tables 1-2, Figures 2-6, Supplementary Tables 1, 3, 5, 9, 12
 $P code/dd_unified.py $O/unified_rekeyc $K
@@ -28,3 +28,8 @@ for r in 1 0; do REPL=$r $P code/dd_v8_occupancy.py $O/v8/occupancy_repl$r.json 
 NPL=300 $P code/dd_v10_clock.py $O/v10/clock.json $R $D/k2023h2c.parquet $D/k2024.parquet $D/k2025.parquet $D/k2026c.parquet
 # mock-review v14 exploratory analyses (leave-one-vault-out, subgroups, service-visit anchor, early life, absolute scale, provenance)
 NPL=300 $P code/dd_v15_review.py $O/v15/review.json $R $D/k2023h2c.parquet $D/k2024.parquet $D/k2025.parquet $D/k2026c.parquet
+# physical-pathway layout test (Supplementary Table 18; the SMART part needs the daily files, see README)
+NPL=300 $P code/dd_v16_layout.py $O/v16/layout.json $R $D/k2023h2c.parquet $D/k2024.parquet $D/k2025.parquet $D/k2026c.parquet
+# AUC with average ranks for ties, and within-server slot-change sensitivity (results/v17)
+$P code/dd_benefit.py $O/v17/dd_benefit_rekeyc_auc.json $D/k2023h2c.parquet $D/k2024.parquet $D/k2025.parquet -- $D/k2026c.parquet
+NPL=300 $P code/dd_v17_slotchange.py $O/v17/slotchange.json $R $D/k2023h2c.parquet $D/k2024.parquet $D/k2025.parquet $D/k2026c.parquet

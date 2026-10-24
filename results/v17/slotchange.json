@@ -1,0 +1,139 @@
+{
+ "meta": {
+  "script": "code/dd_v17_slotchange.py",
+  "status": "exploratory sensitivity, written before running",
+  "NPL": 300,
+  "B": 1000,
+  "SEED": 20261024,
+  "window": [
+   1,
+   30
+  ],
+  "periods": [
+   "k2023h2c.parquet",
+   "k2024.parquet",
+   "k2025.parquet",
+   "k2026c.parquet"
+  ],
+  "per_period": {
+   "k2023h2c.parquet": {
+    "slot_changers_in_runs": 1,
+    "slot_changers_in_table": 1,
+    "index_failures": 1968,
+    "index_failures_of_changers": 0,
+    "near_events_all": 27.0,
+    "near_events_no_changers": 27.0,
+    "far_events_all": 114.0,
+    "far_events_no_changers": 114.0
+   },
+   "k2024.parquet": {
+    "slot_changers_in_runs": 42,
+    "slot_changers_in_table": 42,
+    "index_failures": 4529,
+    "index_failures_of_changers": 2,
+    "near_events_all": 116.0,
+    "near_events_no_changers": 116.0,
+    "far_events_all": 428.0,
+    "far_events_no_changers": 428.0
+   },
+   "k2025.parquet": {
+    "slot_changers_in_runs": 28,
+    "slot_changers_in_table": 28,
+    "index_failures": 4284,
+    "index_failures_of_changers": 7,
+    "near_events_all": 102.0,
+    "near_events_no_changers": 102.0,
+    "far_events_all": 356.0,
+    "far_events_no_changers": 356.0
+   },
+   "k2026c.parquet": {
+    "slot_changers_in_runs": 676,
+    "slot_changers_in_table": 676,
+    "index_failures": 2483,
+    "index_failures_of_changers": 7,
+    "near_events_all": 63.0,
+    "near_events_no_changers": 62.0,
+    "far_events_all": 252.0,
+    "far_events_no_changers": 252.0
+   }
+  }
+ },
+ "pooled|all": {
+  "O_near": 308.0,
+  "E_near": 130.85475514804634,
+  "pm_near": 1.1174300909042358,
+  "O_far": 1150.0,
+  "E_far": 971.5223005126072,
+  "pm_far": 1.0938546657562256,
+  "X_near": 2.106399995645515,
+  "X_far": 1.0821449643194363,
+  "R": 1.9465044565172793,
+  "lo": 1.6792699113601302,
+  "hi": 2.2709879177515977
+ },
+ "pooled|no_changers": {
+  "O_near": 307.0,
+  "E_near": 130.77248323998353,
+  "pm_near": 1.1164789199829102,
+  "O_far": 1150.0,
+  "E_far": 970.7999686815834,
+  "pm_far": 1.0927894115447998,
+  "X_near": 2.102671736982747,
+  "X_far": 1.0840058061900455,
+  "R": 1.9397236850354205,
+  "lo": 1.6712937451954748,
+  "hi": 2.2648683087873174
+ },
+ "explore|all": {
+  "O_near": 245.0,
+  "E_near": 106.483336457209,
+  "pm_near": 1.1246784925460815,
+  "O_far": 898.0,
+  "E_far": 782.5417419602646,
+  "pm_far": 1.084943413734436,
+  "X_near": 2.045766411059269,
+  "X_far": 1.0576981291507486,
+  "R": 1.934168506757088,
+  "lo": 1.638004036336228,
+  "hi": 2.256644106193776
+ },
+ "explore|no_changers": {
+  "O_near": 245.0,
+  "E_near": 106.44351112178943,
+  "pm_near": 1.1235718727111816,
+  "O_far": 898.0,
+  "E_far": 782.2207898622032,
+  "pm_far": 1.0840134620666504,
+  "X_near": 2.048547479378209,
+  "X_far": 1.0590398606521476,
+  "R": 1.9343440747515688,
+  "lo": 1.6380800395654942,
+  "hi": 2.256918210476702
+ },
+ "confirm|all": {
+  "O_near": 63.0,
+  "E_near": 24.371418690837423,
+  "pm_near": 1.0877280235290527,
+  "O_far": 252.0,
+  "E_far": 188.98055855234182,
+  "pm_far": 1.1305267810821533,
+  "X_near": 2.376508769121736,
+  "X_far": 1.1795125271039522,
+  "R": 2.0148228310527223,
+  "lo": 1.5131852412201927,
+  "hi": 2.7711847417945052
+ },
+ "confirm|no_changers": {
+  "O_near": 62.0,
+  "E_near": 24.328972118194184,
+  "pm_near": 1.087380051612854,
+  "O_far": 252.0,
+  "E_far": 188.57917881937934,
+  "pm_far": 1.1289668083190918,
+  "X_near": 2.3436166101574236,
+  "X_far": 1.183656334708994,
+  "R": 1.979980625654836,
+  "lo": 1.462052089261757,
+  "hi": 2.7150453260904164
+ }
+}

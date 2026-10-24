@@ -13,7 +13,7 @@ The analysis uses the public [Backblaze Drive Stats](https://www.backblaze.com/c
 | `data/` | One row per drive per period: `k2023h2c`, `k2024`, `k2025` (exploration) and `k2026c` (2026H1, retrospective time hold-out). |
 | `code/` | Analysis scripts in the versions that produced `results/`. `CHANGELOG_io_fixes.txt` lists every change made after the freeze; none changes analysis logic. |
 | `preregistration/` | The scripts and confirmation addendum frozen on 2026-10-14 17:31 UTC, before the 2026 files were downloaded, with SHA-256 hashes in `FROZEN.txt`. |
-| `results/` | JSON output of each step. The two large intermediate arrays (`unified_rekeyc.npz`, `v5_riskset.npz`, 84 MB) are not in the repository; `run_revision.sh` rebuilds them. `results/v6runs/` holds the daily location runs used by the index-day cohort; `results/v7/` and `results/v8/` hold the cohort and occupancy audits, `results/v10/` the record-clock audit, and `results/v15/` the leave-one-vault-out, subgroup, replacement-timing, early-life and absolute-scale analyses (see `results/v15/README_v15.md`). |
+| `results/` | JSON output of each step. The two large intermediate arrays (`unified_rekeyc.npz`, `v5_riskset.npz`, 84 MB) are not in the repository; `run_revision.sh` rebuilds them. `results/v6runs/` holds the daily location runs used by the index-day cohort; `results/v7/` and `results/v8/` hold the cohort and occupancy audits, `results/v10/` the record-clock audit, `results/v15/` the leave-one-vault-out, subgroup, replacement-timing, early-life and absolute-scale analyses (see `results/v15/README_v15.md`), `results/v16/` the exploratory physical-pathway tests (`README_v16.md`), and `results/v17/` the AUC correction and the within-server slot-change sensitivity (`README_v17.md`). |
 | `figures/` | Figures of the manuscript: `fig1_schematic.png` is Figure 1, and `fig1_sets`, `fig2_distance`, `fig3_timecourse`, `fig4_batch` and `fig5_generalisation` are Figures 2–6 (file names keep the numbering of `code/make_figs_v8.py`). |
 
 ## Server key
@@ -53,6 +53,7 @@ These are not covered by the three entry points:
    - `dd_mechanism.py` part A: slot-distance profile and replacement timing;
    - `dd_mechanism.py` part B: SMART panel;
    - `dd_mech_C.py`: service-visit test (runs on `data/`).
+   - `dd_v16_slim_smart.py` and `dd_v16_smart.py`: neighbour SMART-counter test (`results/v16/`).
 
 The shared-link test is part of `dd_audit.py`, which `run_corrected.sh` runs.
 

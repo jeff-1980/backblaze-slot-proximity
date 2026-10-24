@@ -1,0 +1,28 @@
+[    3.9s] built k2023h2c.parquet {'slot_changers_in_runs': 1, 'slot_changers_in_table': 1, 'index_failures': 1968, 'index_failures_of_changers': 0}
+[    7.3s] built k2024.parquet {'slot_changers_in_runs': 42, 'slot_changers_in_table': 42, 'index_failures': 4529, 'index_failures_of_changers': 2}
+[   11.5s] built k2025.parquet {'slot_changers_in_runs': 28, 'slot_changers_in_table': 28, 'index_failures': 4284, 'index_failures_of_changers': 7}
+[   20.0s] built k2026c.parquet {'slot_changers_in_runs': 676, 'slot_changers_in_table': 676, 'index_failures': 2483, 'index_failures_of_changers': 7}
+[   21.1s] observed {'k2023h2c.parquet': {'slot_changers_in_runs': 1, 'slot_changers_in_table': 1, 'index_failures': 1968, 'index_failures_of_changers': 0, 'near_events_all': 27.0, 'near_events_no_changers': 27.0, 'far_events_all': 114.0, 'far_events_no_changers': 114.0}, 'k2024.parquet': {'slot_changers_in_runs': 42, 'slot_changers_in_table': 42, 'index_failures': 4529, 'index_failures_of_changers': 2, 'near_events_all': 116.0, 'near_events_no_changers': 116.0, 'far_events_all': 428.0, 'far_events_no_changers': 428.0}, 'k2025.parquet': {'slot_changers_in_runs': 28, 'slot_changers_in_table': 28, 'index_failures': 4284, 'index_failures_of_changers': 7, 'near_events_all': 102.0, 'near_events_no_changers': 102.0, 'far_events_all': 356.0, 'far_events_no_changers': 356.0}, 'k2026c.parquet': {'slot_changers_in_runs': 676, 'slot_changers_in_table': 676, 'index_failures': 2483, 'index_failures_of_changers': 7, 'near_events_all': 63.0, 'near_events_no_changers': 62.0, 'far_events_all': 252.0, 'far_events_no_changers': 252.0}}
+[   23.2s] placebo 1 of 300
+[   30.9s] placebo 21 of 300
+[   38.8s] placebo 41 of 300
+[   47.0s] placebo 61 of 300
+[   54.8s] placebo 81 of 300
+[   63.6s] placebo 101 of 300
+[   72.3s] placebo 121 of 300
+[   79.2s] placebo 141 of 300
+[   86.7s] placebo 161 of 300
+[   95.3s] placebo 181 of 300
+[  102.9s] placebo 201 of 300
+[  111.3s] placebo 221 of 300
+[  120.8s] placebo 241 of 300
+[  129.9s] placebo 261 of 300
+[  137.9s] placebo 281 of 300
+[  145.7s] placebo 300 of 300
+[  145.8s] pooled all 1.947 1.6792699113601302 2.2709879177515977
+[  145.8s] pooled no_changers 1.94 1.6712937451954748 2.2648683087873174
+[  145.8s] explore all 1.934 1.638004036336228 2.256644106193776
+[  145.8s] explore no_changers 1.934 1.6380800395654942 2.256918210476702
+[  145.8s] confirm all 2.015 1.5131852412201927 2.7711847417945052
+[  145.8s] confirm no_changers 1.98 1.462052089261757 2.7150453260904164
+[  146.0s] wrote results/v17/slotchange.json

@@ -41,3 +41,8 @@ Release edit (2026-10-17, I/O only)
   dd_slim_k.py: the free-space guard read the author's Windows drive (/mnt/c); it now reads $FREE_CHECK_PATH,
   defaulting to <tmpdir>. No other script was changed for the release; the scripts in code/ are the versions
   that produced results/. preregistration/ holds the copies frozen on 2026-10-14 (SHA-256 in FROZEN.txt).
+
+2026-10-24  dd_benefit.py, dd_benefit_perfailure.py: auc() now uses average ranks for tied scores
+            (scipy.stats.rankdata, method "average"). The earlier argsort ranks gave ties an arbitrary order
+            (scores [0,0], labels [0,1] returned 1.0 instead of 0.5). This changes AUC only; recall at a budget
+            and all other outputs are unchanged. Reruns: results/v17/.

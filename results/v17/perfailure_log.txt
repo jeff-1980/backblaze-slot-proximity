@@ -1,0 +1,86 @@
+{
+ "auc": {
+  "M0": 0.6706849902967336,
+  "M1": 0.6724362230548045
+ },
+ "recall_per_failure": {
+  "0.005": {
+   "M0": 0.019310344827586208,
+   "M1": 0.02620689655172414,
+   "diff": 0.006896551724137931,
+   "lo": -0.0012838753387533898,
+   "hi": 0.014129981424468101,
+   "n_failing_drives": 2175,
+   "M0_burden": {
+    "caught_failures": 42,
+    "alerts": 30833,
+    "unique_alerted_drives": 1793,
+    "alerts_per_alerted_drive": 17.196319018404907
+   },
+   "M1_burden": {
+    "caught_failures": 57,
+    "alerts": 30833,
+    "unique_alerted_drives": 3362,
+    "alerts_per_alerted_drive": 9.171029149315883
+   },
+   "M1_only": {
+    "alerted_drives": 1680,
+    "caught_failures_only_M1": 22,
+    "lost_failures_only_M0": 7
+   }
+  },
+  "0.01": {
+   "M0": 0.0367816091954023,
+   "M1": 0.05379310344827586,
+   "diff": 0.017011494252873564,
+   "lo": 0.0038749011071529172,
+   "hi": 0.034156408634587,
+   "n_failing_drives": 2175,
+   "M0_burden": {
+    "caught_failures": 80,
+    "alerts": 61657,
+    "unique_alerted_drives": 3578,
+    "alerts_per_alerted_drive": 17.23225265511459
+   },
+   "M1_burden": {
+    "caught_failures": 117,
+    "alerts": 61657,
+    "unique_alerted_drives": 6904,
+    "alerts_per_alerted_drive": 8.930619930475087
+   },
+   "M1_only": {
+    "alerted_drives": 3502,
+    "caught_failures_only_M1": 48,
+    "lost_failures_only_M0": 11
+   }
+  },
+  "0.02": {
+   "M0": 0.0864367816091954,
+   "M1": 0.08827586206896551,
+   "diff": 0.0018390804597701038,
+   "lo": -0.00967306510419613,
+   "hi": 0.009886791286992045,
+   "n_failing_drives": 2175,
+   "M0_burden": {
+    "caught_failures": 188,
+    "alerts": 123303,
+    "unique_alerted_drives": 7175,
+    "alerts_per_alerted_drive": 17.18508710801394
+   },
+   "M1_burden": {
+    "caught_failures": 192,
+    "alerts": 123303,
+    "unique_alerted_drives": 9729,
+    "alerts_per_alerted_drive": 12.673758865248226
+   },
+   "M1_only": {
+    "alerted_drives": 2670,
+    "caught_failures_only_M1": 22,
+    "lost_failures_only_M0": 18
+   }
+  }
+ },
+ "coverage_nb30": 0.014383137011779294,
+ "coverage_per_failure_nb30": 0.023448275862068966,
+ "reading": "OPERATIONAL_GAIN"
+}
